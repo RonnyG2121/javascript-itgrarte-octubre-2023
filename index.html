@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de introducción a la programación con JavaScript edición de Octubre 2023 de la fundación Itgrarte
+    </title>
+    <link rel="stylesheet" href="assets/styless.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Introducción a la programación con JavaScript edición Octubre del 2023</h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#tema1">Introducción</a></li>
+                <li><a href="#tema2">Conociendo los tipos de datos y sus estructuras</a></li>
+                <li><a href="#tema3">Sentencias de control de flujo</a></li>
+                <li><a href="#tema4">Funciones</a></li>
+                <li><a href="#tema5">Por agregar</a></li>
+            </ul>
+        </nav>
+        <mark>FUNDACIÓN ITGRARTE</mark>
+        <div>Autor:
+            <b>Ronny Onier González Vargas</b>
+        </div>
+    </header>
+    <main>
+        <hr id="inicio">
+        <section class="section">
+            <h2>Bienvenida</h2>
+            <article>
+                <p>
+                    ¡Recibe una cordial bienvenida al curso de introducción a la programación con JavaScript!
+                    ¡Gracias a la fundación Itgrarte!
+                    En este curso, aprenderás la ógica de programación desde 0 y conocerás al lenguaje rey de la WEB.
+                    Lo que apenderás:
+                </p>
+                <ul>
+                    <li>Una breve historia sobre JavaScript</li>
+                    <li>Conceptos sobre la programación</li>
+                    <li>Variables y constantes</li>
+                    <li>Operadores</li>
+                    <li>Tipo de datos que maneja JavaScript</li>
+                    <li>Estructuras de datos</li>
+                    <li>sentencias de control de flujo (condicionales y bucles)</li>
+                    <li>Funciones</li>
+                    <li>Manejo de errores</li>
+                </ul>
+            </article>
+        </section>
+
+        <hr id="tema1">
+        <section class="section">
+            <h2>Introducción</h2>
+            <article>
+                <h3>Definición de programación</h3>
+                <p>La programación es la rama de la informática que engloba la creación, diseño, mantenimiento y protección de software.</p>
+                <p>Programar es también, darle instrucciones a una computadora. A trabés de ellas se resuelben problemas o tareas que los usuarios solicitan.</p>
+                <p>Junto a esta se encuentra El algoritmo, y no es más que una secuencia de pasos a seguir tanto por una persona en su día a día y las computadoras para crear programas eficientes.</p>
+                <p>Conociendo esto, sería de gran importancia saber que es un lenguaje de programación.</p>
+                <h3>Lenguaje de programación</h3>
+                <p>Un lenguaje de programación, es un idioma desarrollado por humanos para poder comunicarse con el computador, ya que estas no entienden nuestro lenguaje.</p>
+                <p>Las computadoras están desarrolladas para entender el lenguaje binario o lenguaje máquina, mismo que está fundamentado en base 2, y compuestos de ceros y unos.</p>
+                <p>Los lenguajes están compuestos por símbolos y palabras, mismos que podemos entender. Luego, este es convertido a lenguaje máquina y la computadora lo interpreta para crear esos programas que nos solucionan muchos problemas.</p>
+                    <p>Dentro de los lenguajes existen 2 tipos, compilados he interpretados.</p>
+                    <h4>Lenguages compilados</h4>
+                    <p>Los lenguajes compilados son aquellos que necesitan de un compilador para ejecutar los programas escritos en el.</p>
+                    <p>Los lenguajes compilados suelen ser más rápidos que los interpretados. ya que estos, tienen una comunicación más directa con el hardware de la máquina y no requiere de que interpreten en la ejecución</p>
+                    <p>En otros casos, el código fuente de un programa es traducido a una forma intermedia (a menudo llamada bytecode), la cual luego debe ser interpretada o compilada para ejecutarse.</p>
+                    <h4>Lenguajes interpretados</h4>
+                    <p>Un lenguaje de programación interpretado es aquel que el código fuente se ejecuta directamente, instrucción a instrucción. Es decir, el código no pasa por un proceso de compilación, sino que tenemos un programa llamado intérprete que lee la instrucción en tiempo real, y la ejecuta.</p>
+                    <p>Estos lenguajes, son más rápidos de depurar, ya que los errores pueden suceder en tiempo de ejecución</p>
+                    <p>El proceso de interpretación implica que el intérprete va analizando el código fuente línea por línea, identificando los comandos y expresiones que se encuentran en cada una de ellas, y ejecutando las acciones correspondientes en la máquina en la que se está ejecutando el intérprete.</p>
+                    <h3>Vreve historia sobre JavaScript</h3>
+                    <p>Javascript es un lenguaje interpretado y multipropósito desarrollado en 1995 en 13 días por
+                        <a href="https://es.wikipedia.org/wiki/Brendan_Eich" target="_blank" title="Brendan Eich">Brendan Eich</a>
+                        en la empresa
+                        <a href="https://es.wikipedia.org/wiki/Netscape_Communications_Corporation" target="_blank" title="Netscape">Netscape</a>
+                    </p>
+                    <p>En ese tiempo existía la guerra de los navegadores principalmente contra
+                        <a href="https://es.wikipedia.org/wiki/Internet_Explorer" title="Internet explorer">Internet explorer</a>
+                    </p>
+                    <p>El principal objetivo de JavaScript, era darle vida a las páginas webs, agregándole animaciones he interactividad.</p>
+                    <p>Con el paso de los años, el lenguaje fue adquiriendo más protagonismo en la web, hasta convertirse en lo que es hoy. El rey indiscutible de la web.</p>
+                    <p>Es débilmente tipado, razón por la cual podemos modificar el valor de las variables de un tipo de dato a otro a lo largo del programa.</p>
+                    <p>JavaScript originalmente fue desarrollado para interactuar de lado del cliente, pero a partir del 2009 todo dio un cambia importante con la creación de NodeJS por Ryan Dahl.</p>
+                    <p>Hoy en día JavaScript es ampliamente utilizado para crear incluso aplicaciones móviles, junto a frameworks muy importantes como React JS.</p>
+                    <p>En 2015, con un cambio importante a través el Egma 6, se añadieron nuevas funciones al lenguaje.</p>
+                    <h3>Definición de variables y constantes</h3>
+                    <h4>Variables</h4>
+                    <p>Una variable, es un espacio que guarda la memoria de nuestro computador para almacenar un determinado valor.</p>
+                    <p>Siendo variable, ese valor puede se modificado más adelante en el programa. siendo JavaScript un lenguaje de tipado dédébil, este valor puede cambiar por ejemplo de número a texto.</p>
+                        <p>Las variables, son pieza fundamental he importante en nuestros programas.</p>
+                        <h4>Constantes</h4>
+                        <p>Las constantes, de igual manera son un espacio reservado en memoria, pero con la única diferencia que este no puede ser alterado más adelante en el programa.</p>
+                        <p>Las constantes, si o sí necesitamos inicializarla con un valor, ya que si no lo hacemos, nos dará un error en el código.</p>
+                        <p>Al ser JavaScript un lenguaje altamente flexible, Cuando se trata de un arreglo o un objeto, se puede modificar su valor siempre y cuando no cambie el tipo de dato.</p>
+                        <p>Por ejemplo: si guardas un arreglo en una constante, no la puedes reasignar y convertirla a objeto ou otro tipo de dato o estructura.</p>
+                        <h4>let, const y var</h4>
+                        <p>var: Antiguamente utilizada, se declaraban tanto variables como constantes con esa misma palabra, permitiendo así modificar las constantes si alguien con malas intenciones así lo quisiera.</p>
+                        <p>Con la llegada de EgmaScript 6 en 2015, se introducen let y const, dotando a JavaScript de variables de bloque.</p>
+                        <h4>Ambito de variables</h4>
+                        <h5>Ambito global</h5>
+                        <p>Significa que las variables o constantes que declaremos fuera de las funciones se podrán utilizar en cualquier parte del código.</p>
+                        <p>La palabra var cumplía con los 2 ámbitos, pero por buenas prácticas no se recomienda usar var. let es más recomendable.</p>
+                        <h5>Ambito local</h5>
+                        <p>El ámbito local es aquel en el que las variables que se declaren dentro de una función o bloque de código no pueden ser utilizadas fuera de ese bloque.</p>
+                        <p>En JavaScript, los bloque de código se definen entre una llave de apertura y una de cierre. todo lo que pase en ese bloque con relación a variables o constantes, se quedará en ese bloque.</p>
+                        <p>Ahora bien, si declaras una variable global, puedes modificar su valor en un bloque, pero su valor cambiará solo dentro de ese bloque, pero si tiene un valor anterior este se reasignará dentro del bloque pero fuera de este, tendrá su valor original.</p>
+                        <h3>palabras reservadas</h3>
+                        <ul>
+                            <li>async</li>
+                            <li>await</li>
+                            <li>break</li>
+                            <li>case</li>
+                            <li>catch</li>
+                            <li>class</li>
+                            <li>constructor</li>
+                            <li>const</li>
+                            <li>continue</li>
+                            <li>debugger</li>
+                            <li>default</li>
+                            <li>delete</li>
+                            <li>do</li>
+                            <li>else</li>
+                            <li>export</li>
+                            <li>extends</li>
+                            <li>finally</li>
+                            <li>for</li>
+                            <li>function</li>
+                            <li>if</li>
+                            <li>import</li>
+                            <li>in</li>
+                            <li>instanceof</li>
+                            <li>let</li>
+                            <li>new</li>
+                            <li>return</li>
+                            <li>super</li>
+                            <li>switch</li>
+                            <li>this</li>
+                            <li>throw</li>
+                            <li>try</li>
+                            <li>typeof</li>
+                            <li>var</li>
+                            <li>void</li>
+                            <li>while</li>
+                            <li>with</li>
+                            <li>yield</li>
+                          </ul>                          
+
+            </article>
+
+        </section>
+
+        <hr id="tema2">
+        <section class="section">
+            <h2>Operadores, tipos de datos y estructuras</h2>
+            <article></article>
+
+        </section>
+        <hr id="tema3">
+        <section class="section">
+            <h2>Estructuras de control de flujo</h2>
+            <article></article>
+        </section>
+        <hr id="tema4">
+        <section class="section">
+            <h2>Funciones</h2>
+            <article></article>
+
+        </section>
+        <hr id="tema5">
+        <section class="section">
+            <h2>Tema final</h2>
+            <article></article>
+        </section>
+    </main>
+
+    <!--<script src="app/index.js" type="module"></script>-->
+</body>
+
+</html>
