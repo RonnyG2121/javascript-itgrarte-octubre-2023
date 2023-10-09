@@ -84,7 +84,10 @@ b {
   margin: 0px;
   line-height: 1.5;
   justify-content: space-between;
- text-transform: capitalize; 
+}
+
+.section p::first-letter {
+  text-transform: uppercase;
 }
 
 
