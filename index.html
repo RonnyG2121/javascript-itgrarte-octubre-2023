@@ -243,7 +243,46 @@
         <hr id="tema3">
         <section class="section">
             <h2>Estructuras de control de flujo</h2>
-            <article></article>
+            <article>
+                <h3>Condicionales</h3>
+                <p>Las condicionales, son un bloque de código muy importante en nuestros programas, que nos servirán para evaluar una serie de comportamientos en el código.</p>
+                <p>Tomemos como ejemplo un club en el que solo entrarán personas mayores de 18 años. En dicho club si la persona no cumple  la condición, no podrá entrar.</p>
+                <p>Ese es el trabajo de las condicionales.Evaluar una serie de parámetros a cumplir para tomar una decisión y realizar diferentes acciones en el código.</p>
+                <p>Es decir, si una o varias condiciones se cumplen nuestros programas tomarán un camino u otro dependiendo de que les idiquemos.</p>
+                <p>Estas condicionales son:</p>
+                <ul>
+                    <li>If: Si una deteminada condición se cumple, el programa detendrá su flujo de ejecución y entrará en ella, para luego ejecutar las líneas que se encuentran definidas dentro de dicho bloque</li>
+                    <li>Else: Si lo que está en el if no se cumple, el programa continuará su flujo hasta dar con el else, que quiere decir básicamente de lo contrario</li>
+                    <li>Else if: condicionales anidadas o varios if dentro de un principal. De no darse la primera condición, ingresa en el primer else if que encuentre hasta que alguna se cumpla. De no hacerlo, entrará en su correspondiente else al final</li>
+                </ul>
+                <p>Dentro de JavaScript, un if o fvarios pueden ir si el else, pero el else no puede ir sin un correspondiente if.</p>
+                <p>Podemos escribir una condicional dentro de otra tanto como queramos o necesitemos, Esto no es una buena práctica, por lo que las condicionales anidadas nos ayudan a que nuestro código se vea más limpio.</p>
+                <p>También podemos evaluar varias condiciones posibles en un solo if, usando los operadores lógicos para concatenar una serie de condiciones que deben darse para que el programa decida que hacer.</p>
+                <p>A grandes razgos, las condicionales dotan a nuestros programas de una cierta inteligencia, que usará dadas las condiciones requeridas.</p>
+                <h3>Bucles</h3>
+                <p>Los bucles, o ciclos, son bloques de código que se repetirán si una condición es verdadera. Este se repetirá una vez, varias, o puede que ninguna dependiendo.</p>
+                <p><q>Puedes pensar en un bucle como una versión computarizada del juego en la que le dices a alguien que dé X pasos en una dirección y luego Y pasos en otra.</q></p>
+                <p>En los lenguajes de programación, tenemos 2 tipos de bucles. Deteminados he indeterminados.</p>
+                <h4>Bucles determinados</h4>
+                <p>Este tipo de bucle permite establecer el número de veces que se repetirá un bloque de c-odigo. Todo hasta que la condición que lo originó sea falsa. Dentro de este tenemos:</p>
+                <h5>Bucle for</h5>
+                <p>Empezamos con el for. Este sirve principalmente para recorrer un array, pero tiene muchos usos. Este repetirá un bloque de código hasta que su condición sea falsa.</p>
+                <p><q>Un ciclo for se repite hasta que una condición especificada se evalúe como false. El bucle for de JavaScript es similar al bucle for de Java y C.
+Una declaración for tiene el siguiente aspecto:
+for ([expresiónInicial]; [expresiónCondicional]; [expresiónDeActualización])
+  instrucción</q>.</p>
+  <p>Cuando se ejecuta un bucle for, ocurre lo siguiente:</p>
+  <ol>
+    <li>Se ejecuta la expresión de iniciación expresiónInicial, si existe. Esta expresión normalmente inicia uno o más contadores de bucle, pero la sintaxis permite una expresión de cualquier grado de complejidad. Esta expresión también puede declarar variables.</li>
+    <li>Se evalúa la expresión expresiónCondicional. Si el valor de expresiónCondicional es verdadero, se ejecutan las instrucciones del bucle. Si el valor de condición es falso, el bucle for termina. (Si la expresión condición se omite por completo, se supone que la condición es verdadera).</li>
+    <li>Se ejecuta la instrucción. Para ejecutar varias instrucciones, usa una declaración de bloque ({ ... }) para agrupar esas declaraciones.</li>
+    <li>Si está presente, se ejecuta la expresión de actualización expresiónDeActualización.</li>
+    <li>El control regresa al paso 2.</li>
+  </ol>
+  <p>Visita el siguiente enlace para más</p>
+  <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Loops_and_iteration">Bucles he iteración</a>
+
+            </article>
         </section>
         <hr id="tema4">
         <section class="section">
