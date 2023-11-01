@@ -87,10 +87,12 @@
                 <li><a href="https://nvda.es/files/get.php?file=nvdaremote">Complemento remote para NVDA (si lo
                         usas)</a></li>
             </ul>
-            <p>El enlace a las clases grabadas y los archivos de código correspondientes, serán añadidos en cada
-                sección.</p>
-                
-                <a href="https://classroom.google.com/c/NjM1NjIwNjUxNzU0?cjc=beojk4c" target="_blank">Link del aula en ClassRoom</a>
+            <p>El enlace a al video de cada clase y los archivos de código de los temas serán añadidos en cada sección.</p>
+            <h3>Enlaces de ClassRoom y Google Meet</h3>
+                <div class="aula">
+                    <a href="https://classroom.google.com/c/NjM1NjIwNjUxNzU0?cjc=beojk4c" target="_blank">Link del aula en ClassRoom</a>
+                    <a href="meet.google.com/eum-eozm-uan" target="_blank">Link de las videoconferencias en google Meet</a>
+                </div>
             </article>
         </section>
 
@@ -465,8 +467,25 @@
         </section>
         <hr id="tema5">
         <section class="section">
-            <h2>Tema final</h2>
-            <article></article>
+            <h2>Manejo de errores con try and catch y tema final</h2>
+            <article>
+                <p>En todo el mundo del desarrollo, tenemos un compañero molesto pero efectivo, ya que nos enseña a ser mejores en lo que hacemos. Ese amigo es el error tanto en el código como en la parte ógica.</p>
+                <p>A causa de esto tenemos en javascript y en cualquier otro lenguaje de pleno derecho el manejo de excepciones y errores. Estos errores se dan principalmente cuando nuestros programas se ejecutan y por lo general, detiene la ejecución y todo el código cae aunque el error esté en una pequeña parte de él. Es por eso que existe el manejo de las exepciones que puede darse en el código.</p>
+                <p>Para esto, tenemos el try y el catch, que nos permiten capturar un error en específico y mandar la excepción para que el programa no caiga.</p>
+                <h3>Instrucción try</h3>
+                <p>La instrucción try nos sirve para capturar una o varias líneas que contengan el error. en el bloque try debemos poner las líneas en las que se genera el error para poder  atraparlo.</p>
+                <p>por ejemplo: si estamos cargando un archivo para leerlo, la línea que abre el archivo tiene que estar definida dentro del bloque try. Con esto, cualquier error que lance el programa ya sea si el archivo no existe o si no lo pudo abrir.</p>
+                <h3>Instrucción catch</h3>
+                <p>Para poder visualizar o mostrarle el error al usuario, necesitamos definir el bloque catch. Este obtiene el error capturado en el try y el desarrollador puede mostrar ese error para que el programa no caiga No puedes usar varios catch en JavaScript ya que no es posible. En su lugar, como el catch sirve para la gestión del error, puedes validar de donde viene el error y hacer la gestión que necesites.</p>
+                <h3>Instrucción finally</h3>
+                <p>Esta instrucción o bloque se agrega cuando ocurra lo que ocurra las líneas que se encuentran dentro de él se ejecuten.</p>
+                <p>Ejemplo: En la apertura de archivos necesitamos que este luego de utilizarse en el programa se cierre, haya ocurrido un error o no. Para esto usamos el bloque finally y dentro de las llaves van las líneas que se ejecutarán cuando el archivo se haya abierto o no se pueda abrir según sea el caso.</p>
+                <h3>Personalizar errores con throw</h3>
+                <p>En JavaScript, podemos crear nuestros propios errores y mandarlos directamente al catch luego de que se capture.</p>
+                <p>Para esto, validamos el error en el try y luego de escribir la instrucción throw podemos usar desde un número hasta un mensaje personalizado pero, se suele usar la clase Error para mandar un mensaje al usuario, podemos crear un objeto personalizado para definir el error o podemos usar el error que creemos que se va a disparar cuando algo se quiebre en el programa.</p>
+                <p>El uso de números, cadenas de texto o valores booleanos no se recomienda, debido a que no podríamos identificar la pila del error o de donde vino para corregirlo de mejor manera.</p>
+                
+            </article>
         </section>
     </main>
     <footer aria-label="Pié de página">
