@@ -10,23 +10,23 @@
 </head>
 
 <body>
-    <header class="header" aria-label="Cabecera">
+    <header class="header" aria-describedby="Cabecera">
         <h1>Introducción a la programación con JavaScript edición Octubre del 2023</h1>
         <div class="logo">
             <img src="assets/logo_itgrarte.jpg" alt="Logo de la fundación Itgrarte">
         </div>
-        <nav class="menu" aria-label="Barra de navegación">
+        <nav class="menu" aria-describedby="Barra de navegación">
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#tema1">Introducción</a></li>
                 <li><a href="#tema2">Conociendo los tipos de datos y sus estructuras</a></li>
                 <li><a href="#tema3">Sentencias de control de flujo</a></li>
                 <li><a href="#tema4">Funciones</a></li>
-                <li><a href="#tema5">Tema final</a></li>
+                <li><a href="#tema5">Manejo de errores con try and catch</a></li>
             </ul>
         </nav>
         <div>
-            <p>Autor: <b>Ronny Onier González Vargas</b></p>
+            <p>Mentor: <b>Ronny Omnier González Vargas</b></p>
         </div>
     </header>
     <main>
@@ -74,7 +74,7 @@
                     a las 11:30 A.M. (Hora de Argentina)</li>
                 <li>Las clases serán grabadas para la revisión del alumno y repase lo que no entendió</li>
                 <li>El alumno tendrá que entregar trabajos prácticos durante las 6 clases, y deberá hacerlo en el tiempo
-                    estipulado por el profesor</li>
+                    estipulado por el mentor</li>
             </ul>
             <h3>Programas a utilizar</h3>
             <ul>
@@ -83,13 +83,14 @@
                 <li><a href="https://nodejs.org/dist/v18.18.0/node-v18.18.0-x86.msi" target="_blank">Node JS versión LTS
                         para Windows de 32 bits</a></li>
                 <li><a href="https://code.visualstudio.com/Download#" target="_blank">Visual Studio Code</a></li>
-                <li><a href="https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-es"
-                        target="_blank">Extensión para el idioma español de Visual Studio Code</a></li>
+                <li><a href="https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-es" target="_blank">Extensión para el idioma español de Visual Studio Code</a></li>
                 <li><a href="https://nvda.es/files/get.php?file=nvdaremote">Complemento remote para NVDA (si lo
                         usas)</a></li>
             </ul>
             <p>El enlace a las clases grabadas y los archivos de código correspondientes, serán añadidos en cada
                 sección.</p>
+                
+                <a href="https://classroom.google.com/c/NjM1NjIwNjUxNzU0?cjc=beojk4c" target="_blank">Link del aula en ClassRoom</a>
             </article>
         </section>
 
@@ -264,7 +265,7 @@
                         usa el mayor que (>) o mayor o igual que (>=) y viceversa</li>
                 </ul>
                 <p>Para más detalles visita:
-                    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Expressions_and_Operators">Documentación
+                    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Expressions_and_Operators" target="_blank">Documentación
                         completa de los operadores y expresiones</a>
                 </p>
 
@@ -290,7 +291,7 @@
                 <p>A grandes razgos, el tema es interesante he importante, ya que sin estos fundamentos no se puede
                     manejar correctamente la lógica de programación.
                     Para más información visita el siguiente link
-                    <a href="https://ifgeekthen.nttdata.com/es/tipos-de-datos-y-operadores-en-javascript">Datos y
+                    <a href="https://ifgeekthen.nttdata.com/es/tipos-de-datos-y-operadores-en-javascript" target="_blank">Datos y
                         operadores en javascript</a>
                 </p>
 
@@ -372,7 +373,7 @@
                     <p>En el primer case escribimos suma. Este valor se pasará a la variable opciones y al momento, entrará en el case que contiene esta palabra y la calculadora hará la operación correspondiente. Todo igual con las demás operaciones.</p>
                     <p>finalmente, la instrucción default. El flujo de ejecución entrará aquí cuando ninguno de los case coicida con los programados y ejecutará lo que esté aquí, generalmente un mensaje avisando de una operación fallida o algo parecido.</p>
                     <p>Esta sentencia es una estructura muy interesante, de igual manera dotando el código de funcionalidades distintas. Visita el siguiente link para más información.</p>
-                    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/switch">Sentencia switch (Documentación de Mozilla)</a>
+                    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/switch" target="_blank">Sentencia switch (Documentación de Mozilla)</a>
 
                 <h3>Bucles</h3>
                 <p>Los bucles, o ciclos, son bloques de código que se repetirán si una condición es verdadera. Este se
@@ -402,7 +403,7 @@
                     <li>El control regresa al paso 2.</li>
                 </ol>
                 <p>Visita el siguiente enlace para más</p>
-                <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Loops_and_iteration">Bucles he iteración</a>
+                <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Loops_and_iteration" target="_blank">Bucles he iteración</a>
 
                     <h4>Bucles indeterminados</h4>
                     <p>Los bucles indeterminados principalmente, se caracterizan por no tener un número de veces en las que se repetirá.</p>
@@ -414,7 +415,7 @@
                     <p>Puede que el programa no entre en el bucle, y por consecuencia este no se llegue a ejecutar nunca. razón por la cual existe el siguiente bucle:</p>
                     <p>El bucle do while es similar al bucle while. Solo que poniendo esta instrucción, el programa entrará en el bucle al menos una vez. Si se cumple la condición, continuará iterando y repitiéndose.</p>
                     <p>Ejemplo: Tenemos una variable llamada i que está inicializada en 0. Esta se incrementará de 1 en 1 mientras sea menor a 5. con el do while te aseguras de que el flujo de ejecución entre al menos una vez a tu código y si la condición es verdadera se continuará incrementando el valor de i, de lo contrario, saldrá del ciclo y detendrá su ejecución. Para más detalles visita:</p>
-                    <a href=""></a>
+                    <a href="https://desarrolloweb.com/articulos/567.php" target="_blank">Bucles (while and do while) (desarrolloweb)</a>
                     <h5>Instrucciones break y continue</h5>
                     <p>En ocasiones, necesitamos que nuestro código en los ciclos  detenga su ejecución si cierta condición se da o si encuentra algún valor. En estos casos se suelen utilizar estass instrucciones.</p>
                     <ul>
@@ -422,13 +423,44 @@
                         <li>Continue: Esta instrucción detiene la iteración del bucle, pero no sale de él. sino que regresa a la condición sin ejecutar las líneas que se encuentran por debajo de la palabra continue. Ejemplo: si tenemos una variable que se incrementa, y dada una condición usaremos la instrucción, y luego el incremento, este no sucede.</li>
                     </ul>
                     <p>Consulta más información en el siguiente enlace</p>
-                    <a href="https://desarrolloweb.com/articulos/568.php">Instrucciones break y continue</a>
+                    <a href="https://desarrolloweb.com/articulos/568.php" target="_blank">Instrucciones break y continue</a>
                 </article>
             </section>
         <hr id="tema4">
         <section class="section">
             <h2>Funciones</h2>
-            <article></article>
+            <article>
+                <p>Las funciones, son un bloque de código que devuelve un resultado al ser llamadas. Son conocidas como ciudadanos de primera clase, ya que en Javascript se puede hacer prácticamente de todo con ellas.</p>
+                <p>Las funciones son uno de los bloques de construcción fundamentales en JavaScript. Una función en JavaScript es similar a un procedimiento — un conjunto de instrucciones que realiza una tarea o calcula un valor. Para usar una función, debes definirla en algún lugar del ámbito desde el que deseas llamarla.</p>
+                <p>En JavaScript, las funciones también son un tipo de dato por increíble que parezca. Son fundamentales en la reutilización de código, para que no tengamos que repetirlo líneas de código en todo el programa.</p>
+                <p>Luego de definir la función, debemos llamarla para que esta realice su procedimiento. de modo que, no es solo definirla, debemos llamarla en cualquier parte del programa y de esta manera reutilizamos un fragmento de código siempre que lo necesitemos.</p>
+                <h3>Ámbito de variables en funciones</h3>
+                <p>Dentro de las funciones podemos declarar variables, pero al momento de utilizar esas variables, no podemos modificarla fuera del bloque de código que conforma la función, que dicho sea de paso va entre llaves. De igual manera, si declaramos una variable global y la modificamos dentro de la función, su valor cambiará dentro de ella y seguirá teniendo su valor predefinido en el ámbito en que fue declarada.</p>
+                <h3>Declaración de una función</h3>
+                <p>Podemos declarar una función de distintas formas. Y una de ellas, o la principal, es es usando la palabra reservada function Luego el nombre y este tiene que ser sin espacios, sin caracteres especiales y puede ser con guiones bajos. Seguido del nombre, los paréntesis o zona de argumentos. Finalmente el código que tendrá entre llaves.</p>
+                <p>Otra forma es declararla como una expresión, es decir, como si fuera una variable. Podemos declararla como una función anónima, que se ejecutará sin llamarla.</p>
+                <h3>Ejecución de una función</h3>
+                <p>Una función, a menos que esta sea anónima, debe ser llamada para ejecutarse. Como se había explicado líneas más arriba, no solo es crearla, también debemos llamarla donde queramos que haga su procedimiento.</p>
+                <p>Si creamos una función que nos calcule el área de un rectángulo, debemos llamarla más adelante y pasarle los datos correspondientes para que esta nos devuelva el resultado.</p>
+                <h3>Zona de parámetros</h3>
+                <p>Dentro de los paréntesis de una función tenemos lo que conocemos como zona de parámetros o zona de argumentos. Aquí el programador pasa los valores que luego se utilizarán dentro.</p>
+                <p>Por ejemplo: Una función que realiza una suma de números recibe 2 parámetros, num1 y num2. en el return de la función, haremos la operación de la suma y al llamarla, le pasamos los valores por ejemplo 2, 2. Estos parámetros se ceparan por una coma cada uno.</p>
+                <h3>Instrucción return</h3>
+                <p>Puede que una función devuelva un valor cuando la llamemos en el programa, o puede que no dependiendo lo que estemos haciendo. Si queremos que devuelva un valor, (como el resultado de una suma) debemos usar la instrucción return que significa devolver. Luego, el desarrollador decidirá que hará con el valor ya devuelto por la función.</p>
+                <p>Consulta más detalles aquí</p>
+                <a href="https://desarrolloweb.com/articulos/583.php" target="_blank">Funciones JavaScript (desarrolloweb)</a>
+                <h3>Funciones flecha</h3>
+               <p>Las funciones flecha, o (Arrow function) son una nueva forma de compactar el código en JavaScript, solo que con algunas diferencias con las normales. La forma de declararlas es la siguiente: palabra reservada const o let, (ya que la haremos como una expresión) seguido de esto el nombre  y luego el signo igual (=). Luego del signo, tendremos la zona de los parámetros en el que si solo existe uno, podemos omitir los paréntesis. Después, el signo de la flecha gorda o (=>) y finalmente las llaves.</p>
+               <p>En este tipo de funciones tenemos algunas diferencias para reducir código:</p>
+               <ul>
+                <li>Podemos escribir en una sola línea si la función es pequeñ y no llevará más de una línead de código.</li>
+                <li>Podemos omiti la palabra return si la función tiene una sola línea.</li>
+                <li>Podemos omitir los paréntesis si solo tenemos un parámetro en la función.</li>
+               </ul>
+               <p>Consulta más detalles sobre las Arrow function</p>
+               <a href="https://desarrolloweb.com/articulos/arrow-functions-es6.html" target="_blank">Arrow function (desarrolloweb)</a>
+               <p>Sin duda alguna, las funciones serán un gran compañero para nosotros en el trabajo de desarrollador, siendo prácticamente indispensables en nuestros programas.</p>
+            </article>
 
         </section>
         <hr id="tema5">
